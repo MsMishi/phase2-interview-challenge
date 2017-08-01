@@ -7,8 +7,10 @@ clients.forEach(function(query) {
   const id = query.id
   const company = query.company
   const phone = query.phone
+  const strLength = searchString.length
+  let stringMatch = company.slice(0, strLength)
 
-  if(company.indexOf(searchString) > -1) {
+  if(searchString === stringMatch) {
     results.push({id, company, phone})
   }
 })

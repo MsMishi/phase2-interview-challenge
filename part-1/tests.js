@@ -11,7 +11,7 @@ describe('month(date)', function() {
     expect(month(christmas)).to.equal('December')
   })
   it('should return an error for invalid inputs', () => {
-    expect(month(4,'March', 45.7)).to.equal('Please enter a real date in year, month day format.')
+    expect(month(4, 'March', 45.7)).to.equal('Please enter a real date in year, month day format.')
   })
 })
 
@@ -40,18 +40,32 @@ describe('nameProps(obj)', function() {
     expect(nameProps({})).to.deep.equal([])
   })
   it('should return an error for invalid inputs', function() {
-    expect(nameProps(25,['meat', 'beans', 'greens'])).to.deep.equal('Please enter a valid object.')
+    expect(nameProps(25, ['meat', 'beans', 'greens'])).to.deep.equal('Please enter a valid object.')
   })
 })
 
 describe('filterBetween(array, min, max)', function() {
   it('should return a new array of strings from the given array', function() {
-    let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
+    let arr = [
+      'dog',
+      'cat',
+      'zebra',
+      'ape',
+      'lion',
+      'cow'
+    ]
     expect(filterBetween(arr, 'deer', 'giraffe')).to.deep.equal(['dog'])
     expect(filterBetween(arr, 'chimp', 'lobster')).to.deep.equal(['dog', 'lion', 'cow'])
   })
   it('should only return the elements that come after min and before max alphabetically', function() {
-    let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
+    let arr = [
+      'dog',
+      'cat',
+      'zebra',
+      'ape',
+      'lion',
+      'cow'
+    ]
     expect(filterBetween(arr, 'chickadee', 'chimpanzee')).to.deep.equal([])
   })
   it('should retun an error for invalid inputs', function() {
