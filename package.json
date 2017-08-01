@@ -1,0 +1,28 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "functions and tests for part-1 of the phase 2 challenge",
+  "main": "functions.js",
+  "scripts": {
+    "test": "mocha ./tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MsMishi/phase2-interview-challenge.git"
+  },
+  "keywords": [
+    "phase2",
+    "functions",
+    "tests"
+  ],
+  "author": "Mishi Charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MsMishi/phase2-interview-challenge/issues"
+  },
+  "homepage": "https://github.com/MsMishi/phase2-interview-challenge#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0"
+  }
+}
