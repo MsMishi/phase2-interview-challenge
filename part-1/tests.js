@@ -11,19 +11,19 @@ describe('month(date)', function() {
     expect(month(christmas)).to.equal('December')
   })
   it('should return an error for invalid inputs', () => {
-    expect(month(4,'March',tuesday )).to.equal('Please enter a real date in year, month day format.')
+    expect(month(4,'March', 45.7)).to.equal('Please enter a real date in year, month day format.')
   })
 })
 
 describe('reverseSentence(string)', function() {
   it('should return a string with words in reverse order', function() {
-    expect(reverseSentence('The cat jumped over the dog.')).to.equal('dog. the over jumped')
+    expect(reverseSentence('The cat jumped over the dog.')).to.equal('dog. the over jumped cat The')
   })
   it('should return the string if there is only one word', function() {
     expect(reverseSentence('Hello')).to.equal('Hello')
   })
   it('should return an error for invalid inputs', function() {
-    expect(reverseSentence(Rollercoasters)).to.equal('Please enter an actual string.')
+    expect(reverseSentence([23, 'rollercoaster'])).to.equal('Please enter an actual string.')
   })
 })
 
