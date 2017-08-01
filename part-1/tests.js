@@ -34,27 +34,27 @@ describe('nameProps(obj)', function() {
       age: 30,
       phone: '555-555-5555'
     }
-    expect(nameProps(friend)).to.equal(['age', 'name', 'phone'])
+    expect(nameProps(friend)).to.deep.equal(['age', 'name', 'phone'])
   })
   it('should return only the "own properties" of the object', function() {
-    expect(nameProps({})).to.equal([])
+    expect(nameProps({})).to.deep.equal([])
   })
   it('should return an error for invalid inputs', function() {
-    expect(nameProps(['meat', 'beans', 'greens'])).to.equal('Please enter a valid object.')
+    expect(nameProps(25,['meat', 'beans', 'greens'])).to.deep.equal('Please enter a valid object.')
   })
 })
 
 describe('filterBetween(array, min, max)', function() {
   it('should return a new array of strings from the given array', function() {
     let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
-    expect(filterBetween(arr, 'deer', 'giraffe')).to.equal(['dog'])
-    expect(filterBetween(arr, 'chimp', 'lobster')).to.equal(['dog', 'lion', 'cow'])
+    expect(filterBetween(arr, 'deer', 'giraffe')).to.deep.equal(['dog'])
+    expect(filterBetween(arr, 'chimp', 'lobster')).to.deep.equal(['dog', 'lion', 'cow'])
   })
   it('should only return the elements that come after min and before max alphabetically', function() {
     let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
-    expect(filterBetween(arr, 'chickadee', 'chimpanzee')).to.equal([])
+    expect(filterBetween(arr, 'chickadee', 'chimpanzee')).to.deep.equal([])
   })
   it('should retun an error for invalid inputs', function() {
-    expect(filterBetween('zebra', 17, twenty)).to.deep.equal('Please enter an array of strings and two different addiitional strings')
+    expect(filterBetween('zebra', 17)).to.deep.equal('Please enter an array of strings and two different addiitional strings.')
   })
 })

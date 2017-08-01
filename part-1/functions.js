@@ -36,12 +36,25 @@ let nameProps = (obj) => {
   if(typeof obj !== 'object') {
     return 'Please enter a valid object.'
   }
-  let names = Object.keys(obj)
+  let names = []
+  for (prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      names.push(prop)
+    }
+  }
+  return names.sort()
 }
 
-
 /*-----------------------------------------------------------------*/
-
+let filterBetween = (array, min, max) => {
+  if(typeof min !== 'string' || typeof max !== 'string'){
+    return 'Please enter an array of strings and two different addiitional strings.'
+  }
+  let filtered = array.filter(function(x) {
+    return x >= min && x <= max
+  })
+  return filtered
+}
 
 
 /*-----------------------------------------------------------------*/
@@ -50,5 +63,5 @@ module.exports = {
   month,
   reverseSentence,
   nameProps,
-  // filterBetween
+  filterBetween
 }

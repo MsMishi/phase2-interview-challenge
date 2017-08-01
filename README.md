@@ -45,8 +45,8 @@ month(christmas) // returns "December"
 
 - [x] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
 - [x] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `month()` are passing.
+- [x] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
+- [x] __10:__ Tests for `month()` are passing.
 
 ### Reverse a sentence
 
