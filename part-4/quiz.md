@@ -5,7 +5,29 @@
   Use the kill -n PID command where -n is the signal number. I use kill -2 or it's shortcut control-c
 
 - What packages do you have installed via homebrew?
-  autoconf,exercism, git, icu4c, node, pkg-config, readline, shellcheck, tree, cowsay, fortune, hub, lolcat, openssl, postgresql, ruby-build,trash
+  brew list:
+  autoconf
+  exercism
+  git
+  icu4c
+  node
+  pkg-config
+  readline
+  shellcheck
+  tree
+  cowsay
+  fortune
+  hub
+  lolcat
+  openssl
+  postgresql
+  ruby-build
+
+  brew cask list:
+  caffeine                                dash                                    growlnotify                             
+  kap
+  postman
+
 
 - On a UNIX computer, how do you find the process id of a running process?
   Typing the command ps will show all processes that are running including the PID of each process.
