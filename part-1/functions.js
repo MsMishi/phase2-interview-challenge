@@ -25,7 +25,7 @@ let reverseSentence = (string) => {
   if (typeof string !== 'string') {
     return 'Please enter an actual string.'
   }
-  const reversal = string.split(/\s+/).reverse().join(' ')
+  const reversal = string.split(/\s/).reverse().join(' ')
   return reversal
 }
 

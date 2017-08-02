@@ -10,7 +10,7 @@ clients.forEach(function(query) {
   const strLength = searchString.length
   let stringMatch = company.slice(0, strLength)
 
-  if(searchString === stringMatch) {
+  if(searchString.toUpperCase() === stringMatch.toUpperCase()) {
     results.push({id, company, phone})
   }
 })

@@ -9,8 +9,10 @@ clients.forEach(function(person) {
   const company = person.company
   const city = person.city
   const state = person.state
+  const strLength = searchString.length
+  let stringMatch = city.slice(0, strLength)
 
-  if(city.toUpperCase() === searchString.toUpperCase()) {
+  if(searchString.toUpperCase() === stringMatch.toUpperCase()) {
     results.push({id, rep_name, company, city, state})
   }
 })
