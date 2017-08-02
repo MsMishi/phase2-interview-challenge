@@ -1,5 +1,5 @@
 let month = (date) => {
-  if(!(date instanceof Date)) {
+  if (!(date instanceof Date)) {
     return 'Please enter a real date in year, month day format.'
   }
   const months = [
@@ -22,18 +22,16 @@ let month = (date) => {
 
 /*-----------------------------------------------------------------*/
 let reverseSentence = (string) => {
-  if(typeof string !== 'string'){
+  if (typeof string !== 'string') {
     return 'Please enter an actual string.'
   }
-  const reversal = string.split(/\s+/)
-    .reverse()
-    .join(' ')
-    return reversal
+  const reversal = string.split(/\s+/).reverse().join(' ')
+  return reversal
 }
 
 /*-----------------------------------------------------------------*/
 let nameProps = (obj) => {
-  if(typeof obj !== 'object') {
+  if (typeof obj !== 'object') {
     return 'Please enter a valid object.'
   }
   let names = []
@@ -47,7 +45,7 @@ let nameProps = (obj) => {
 
 /*-----------------------------------------------------------------*/
 let filterBetween = (array, min, max) => {
-  if(typeof min !== 'string' || typeof max !== 'string'){
+  if (typeof min !== 'string' || typeof max !== 'string') {
     return 'Please enter an array of strings and two different addiitional strings.'
   }
   let filtered = array.filter(function(x) {
@@ -55,7 +53,6 @@ let filterBetween = (array, min, max) => {
   })
   return filtered
 }
-
 
 /*-----------------------------------------------------------------*/
 

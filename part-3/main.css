@@ -1,0 +1,126 @@
+/*
+body {
+    font-family: "Comic Sans MS";
+}
+
+button {
+    box-shadow: 3px 2px 2px black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: solid black 2px;
+}
+
+.main-window {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.side-bar-title {
+    background-color: lightgray;
+    border: solid black 2px;
+    padding-left: 0.5em;
+}
+
+.menu {
+    padding-left: 0.5em;
+    flex-grow: 1;
+    border: solid black 2px;
+}
+
+.main-panel {
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+}
+
+.genre-section {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+*/
+
+body {
+    font-family: "Comic Sans MS";
+}
+
+button {
+    box-shadow: 3px 2px 2px 2px black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px black;
+    padding-left: 1em;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.side-bar {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 150px;
+    border: solid 2px black;
+}
+
+.side-bar-title {
+    padding-left: 0.5em;
+    border-top: 0px;
+}
+
+.menu {
+    border-top: solid black 3px;
+    padding-left: 0.5em;
+}
+
+.main-window {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1 {
+    padding-right: 1em;
+}
+
+.genre-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 1.5em
+}
+
+.movie-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.movie-row button {
+    margin-right: 3em;    
+}
+
+.name {
+    margin-right: 15em;
+}
