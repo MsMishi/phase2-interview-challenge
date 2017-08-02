@@ -1,60 +1,3 @@
-/*
-body {
-    font-family: "Comic Sans MS";
-}
-
-button {
-    box-shadow: 3px 2px 2px black;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    border: solid black 2px;
-}
-
-.main-window {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-grow: 1;
-}
-
-.side-bar {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-grow: 1;
-    flex-basis: 200px;
-}
-
-.side-bar-title {
-    background-color: lightgray;
-    border: solid black 2px;
-    padding-left: 0.5em;
-}
-
-.menu {
-    padding-left: 0.5em;
-    flex-grow: 1;
-    border: solid black 2px;
-}
-
-.main-panel {
-     display: flex;
-     flex-direction: column;
-     flex-grow: 1;
-}
-
-.genre-section {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-}
-*/
-
 body {
     font-family: "Comic Sans MS";
 }
@@ -118,7 +61,7 @@ h1 {
 }
 
 .movie-row button {
-    margin-right: 3em;    
+    margin-right: 3em;
 }
 
 .name {
